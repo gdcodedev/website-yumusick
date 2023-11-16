@@ -1,80 +1,50 @@
 {
     "musics": [
         {
+            "name": "BURN THE BOATS",
+            "path": "assets/images/BURNTHEBOATS.jpg",
+            "buy": "https://distrokid.com/hyperfollow/yu16/burn-the-boats-feat-yung-buda",
+            "stream": "https://distrokid.com/hyperfollow/yu16/burn-the-boats-feat-yung-buda"
+        },
+        {
             "name": "Hyena",
-            "path": "./assets/images/hyena.jpg",
+            "path": "assets/images/hyena.jpg",
             "buy": "https://distrokid.com/hyperfollow/yu16/hyena",
             "stream": "https://distrokid.com/hyperfollow/yu16/hyena"
-        },
-        {
-            "name": "Pretty Bad Things",
-            "path": "./assets/images/pretty-bad-things.jpg",
-            "buy": "https://yumusick.bandcamp.com/track/pretty-bad-things",
-            "stream": "https://distrokid.com/hyperfollow/yu16/pretty-bad-things?utm_source=SendGrid&utm_medium=Email+&utm_campaign=website"
-        },
-        {
-            "name": "Please Turn Off",
-            "path": "./assets/images/please-turn-off.jpg",
-            "buy": "https://yumusick.bandcamp.com/track/please-turn-off-feat-mateamargo",
-            "stream": "https://distrokid.com/hyperfollow/yu16/please-turn-off-feat-mateamargo"
-        },
-        {
-            "name": "Oh My Loving",
-            "path": "./assets/images/oh-my-loving.jpg",
-            "buy": "https://yumusick.bandcamp.com/track/oh-my-loving",
-            "stream": "https://distrokid.com/hyperfollow/yu16/oh-my-loving"
-        },
-        {
-            "name": "Very Best Friend",
-            "path": "./assets/images/very-best-friend.jpg",
-            "buy": "https://yumusick.bandcamp.com/track/very-best-friend",
-            "stream": "https://distrokid.com/hyperfollow/yu16/very-best-friend-2"
-        },
-        {
-            "name": "Trouble Every Day",
-            "path": "./assets/images/trouble-every-day.jpg",
-            "buy": "https://yumusick.bandcamp.com/album/trouble-every-day",
-            "stream": "https://distrokid.com/hyperfollow/yu16/trouble-every-day-2"
-        },
-        {
-            "name": "Bunny Love",
-            "path": "./assets/images/bunny-love.jpg",
-            "buy": "https://yumusick.bandcamp.com/album/bunny-love",
-            "stream": "https://distrokid.com/hyperfollow/yu16/bunny-love"
         }
     ],
     "products": [
         {
             "name": "Manga Longa Preta",
-            "path": "./assets/images/store/camiseta1.png",
-            "path2": "./assets/images/store/camiseta1-alt.png",
+            "path": "assets/images/store/camiseta1.png",
+            "path2": "assets/images/store/camiseta1-alt.png",
             "url": "https://lolja.com.br/yumusick"
         }
     ],
     "links": [
         {
             "name": "Bandcamp",
-            "path": "./assets/images/links/bandcamp.png",
+            "path": "assets/images/links/bandcamp.png",
             "url": "https://yumusick.bandcamp.com/"
         },
         {
             "name": "Instagram",
-            "path": "./assets/images/links/instagram.png",
+            "path": "assets/images/links/instagram.png",
             "url": "https://www.instagram.com/yumusick/"
         },
         {
             "name": "Youtube",
-            "path": "./assets/images/links/youtube.png",
+            "path": "assets/images/links/youtube.png",
             "url": "https://www.youtube.com/channel/UC3xZwGN6RT7H9PsseyMZeaA"
         },
         {
             "name": "Tiktok",
-            "path": "./assets/images/links/tiktok.png",
+            "path": "assets/images/links/tiktok.png",
             "url": "https://www.tiktok.com/@yumusick"
         },
         {
             "name": "Contact",
-            "path": "./assets/images/links/contact.png",
+            "path": "assets/images/links/contact.png",
             "url": "mailto:yubunnylove@gmail.com"
         }
     ]
