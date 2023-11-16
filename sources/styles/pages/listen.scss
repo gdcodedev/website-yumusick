@@ -1,0 +1,65 @@
+.listen {
+    height: 100%;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: auto;
+        height: vw(405);
+        margin: vw(50) auto 0;
+        box-sizing: border-box;
+        position: relative;
+
+        @include media(">desktop") {
+            width: vw(868);
+            height: vw(495);
+        }
+
+        &::-webkit-scrollbar {
+            width: vw(6);
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $gray;
+            border-radius: vw(6);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $pink;
+            border-radius: vw(6);
+            border: vw(3) solid $pink;
+        }
+    }
+
+    &__album {
+        padding: vw(40) 0 vw(40);
+
+        @include media(">desktop") {
+            padding: vw(80) 0 vw(60);
+        }
+    }
+
+    &__cover {
+        width: vw(295);
+        height: vw(295);
+        border: 1px solid $white;
+
+        @include media("<desktop") {
+            width: vw(260);
+            height: vw(260);
+        }
+    }
+
+    &__text {
+        display: flex;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: $white;
+            font-size: vw(34);
+            margin-top: vw(12);
+        }
+    }
+}

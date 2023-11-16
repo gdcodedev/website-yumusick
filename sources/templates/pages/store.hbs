@@ -1,0 +1,17 @@
+<div class="store">
+    <div class="store__wrapper">
+        <!-- <p class="store__disclaimer">SOON</p> -->
+        {{#each products}}
+            <a target="_blank" class="store__item flip-container" title="{{name}}" href="{{url}}" ontouchstart="this.classList.toggle('hover');">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="{{path}}" alt="{{name}}">
+                    </div>
+                    <div class="back">
+                        <img src="{{path2}}" alt="{{name}}">
+                    </div>
+                </div>
+            </a>
+        {{/each}}
+    </div>
+</div>

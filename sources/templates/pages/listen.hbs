@@ -1,0 +1,13 @@
+<div id="listen" data-anchor-scroll="listen" class="listen">
+    <div class="listen__wrapper">
+        {{#each musics}}
+            <div class="listen__album">
+                <img class="listen__cover" src="{{path}}" alt="{{name}}">
+                <div class="listen__text">
+                    <a target="_blank" href="{{buy}}">BUY</a>
+                    <a target="_blank" href="{{stream}}">STREAM</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

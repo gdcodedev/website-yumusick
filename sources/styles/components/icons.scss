@@ -1,0 +1,24 @@
+.icon {
+    font-style: normal;
+    display: inline-block;
+    background: no-repeat;
+    vertical-align: middle;
+    width: vw(18);
+    height: vw(18);
+    background-position: center;
+
+    &--small {
+        width: vw(14);
+        height: vw(14);
+    }
+
+    &--sound {
+        background-image: url(../images/icons/sound.svg);
+        background-size: contain;
+    }
+
+    &--code {
+        background-image: url(../images/icons/code.svg);
+        background-size: contain;
+    }
+}

@@ -1,0 +1,12 @@
+.embed {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: vw(300);
+    min-height: vw(380);
+    height: 80%;
+
+    @include media(">desktop") {
+        width: vw(500);
+    }
+}

@@ -1,0 +1,29 @@
+.intro {
+    background-color: $black;
+    height: 100vh;
+
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+            color: $white;
+            width: auto;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-content: center;
+        margin-top: vw(15);
+
+        a {
+            margin: vw(8);
+            padding: vw(8);
+            border: 1px solid $white;
+        }
+    }
+}

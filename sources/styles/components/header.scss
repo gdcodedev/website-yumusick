@@ -1,0 +1,181 @@
+.header {
+    z-index: 5;
+    width: 100%;
+    margin: vw(40) 0;
+
+    @include media(">desktop") {
+        margin: vw(90) 0 0 0;
+    }
+
+    &__wrapper {
+        max-width: vw(325);
+        height: vw(40);
+        margin: 0 auto vw(25);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+
+        @include media(">desktop") {
+            max-width: vw(1000);
+        }
+    }
+
+    &__menu {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0rem 1.05rem 3.4rem -0.2rem rgb(209 209 209 / 50%);
+
+        @include media(">desktop") {
+            margin: 0;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &-purchase {
+            @include media("<desktop") {
+                order: -1;
+            }
+
+            a {
+                border-radius: vw(20);
+                background-color: $accent;
+                color: $white;
+                padding: vw(10) vw(20);
+                @extend .hover-zoom;
+
+                @include media("<desktop") {
+                    display: inline-block;
+                }
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        height: 100%;
+        width: 75%;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: -190%;
+        transition: left 0.3s ease-out;
+        display: flex;
+        align-items: flex-start;
+        background-color: $onix-strong;
+
+        @include media(">desktop") {
+            position: static;
+            box-shadow: none;
+            width: auto;
+            align-items: center;
+            margin: auto;
+        }
+
+        &-link {
+            color: $white;
+            font-weight: 200;
+            margin: vw(20) 0;
+            font-size: vw(20);
+            display: block;
+            text-transform: uppercase;
+
+            @include media(">desktop") {
+                color: $white;
+                margin: 0 0 0 vw(32);
+                font-size: vw(38);
+            }
+
+            &--first {
+                @include media(">desktop") {
+                    margin: 0;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        .active-menu & {
+            left: 0;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        width: vw(70);
+        transform: scale(0.4) rotate(180deg);
+        position: relative;
+        left: vw(15);
+
+        @include media(">desktop") {
+            display: none;
+        }
+
+        span {
+            background: $white;
+            border-radius: vw(10);
+            height: vw(7);
+            margin: vw(7) 0;
+            transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+            width: 100%;
+
+            &:nth-of-type(1) {
+                .active-menu & {
+                    width: 50%;
+                }
+            }
+
+            &:nth-of-type(2) {
+                .active-menu & {
+                    width: 100%;
+                }
+            }
+
+            &:nth-of-type(3) {
+                .active-menu & {
+                    width: 75%;
+                }
+            }
+        }
+
+        input[type="checkbox"] {
+            display: none;
+
+            &:checked ~ span:nth-of-type(1) {
+                transform-origin: bottom;
+                transform: rotatez(45deg) translate(vw(8), vw(0));
+            }
+
+            &:checked ~ span:nth-of-type(2) {
+                transform-origin: top;
+                transform: rotatez(-45deg);
+            }
+
+            &:checked ~ span:nth-of-type(3) {
+                transform-origin: bottom;
+                width: 50%;
+                transform: translate(vw(30), vw(-11)) rotatez(45deg);
+            }
+        }
+    }
+}
+
+#site-header {
+    .intro-page & {
+        display: none;
+    }
+}

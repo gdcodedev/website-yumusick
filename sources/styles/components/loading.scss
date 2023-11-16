@@ -1,0 +1,21 @@
+/* ============================================== */
+/* ================== loading =================== */
+/* ============================================== */
+
+.loading {
+    height: 100vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1031;
+    background-color: $onix-strong;
+
+    &__logo {
+        width: vw(80);
+        height: auto;
+    }
+}

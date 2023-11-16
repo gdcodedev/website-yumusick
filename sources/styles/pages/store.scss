@@ -1,0 +1,96 @@
+.store {
+    height: 100%;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: auto;
+        height: vw(405);
+        margin: vw(50) auto 0;
+        box-sizing: border-box;
+        position: relative;
+
+        @include media(">desktop") {
+            width: vw(868);
+            height: vw(495);
+        }
+
+        &::-webkit-scrollbar {
+            width: vw(6);
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $gray;
+            border-radius: vw(6);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $pink;
+            border-radius: vw(6);
+            border: vw(3) solid $pink;
+        }
+    }
+
+    &__disclaimer {
+        font-size: vw(240);
+        width: auto;
+        height: 100%;
+        font-family: "Big Caslon";
+        color: $white;
+        align-items: center;
+        display: flex;
+        letter-spacing: vw(10);
+
+        @include media("<desktop") {
+            font-size: vw(70);
+        }
+    }
+
+    &__item {
+        width: vw(350);
+        height: vw(350);
+        padding: vw(40) 0;
+
+        @include media(">desktop") {
+            padding: vw(80) 0;
+        }
+    }
+}
+.flip-container {
+    perspective: 1000px;
+}
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+.flip-container,
+.front,
+.back {
+    width: vw(350);
+    height: vw(350);
+
+    @include media(">desktop") {
+        width: vw(365);
+        height: vw(365);
+    }
+}
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back {
+    transform: rotateY(180deg);
+}

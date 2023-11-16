@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    margin: 0 0 vw(35) 0;
+
+    @include media(">desktop") {
+        flex-direction: row;
+        right: vw(36);
+        margin: 0;
+    }
+
+    .intro-page & {
+        display: none;
+    }
+
+    img {
+        width: auto;
+        margin: vw(20);
+    }
+
+    img.restricted {
+        width: vw(200);
+    }
+}

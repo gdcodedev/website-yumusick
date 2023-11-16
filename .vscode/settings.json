@@ -1,0 +1,14 @@
+{
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "eslint.validate": [
+        "typescript",
+        "typescriptreact"
+    ],
+    "liveServer.settings.port": 5501
+}
