@@ -25,3 +25,203 @@
         width: vw(200);
     }
 }
+
+.div-seated-event-row {
+    position: relative;
+    width: 967px;
+    height: 10px;
+    margin-top: 14px !important;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #ffffff33;
+  }
+  
+  .div-seated-event-row .div-seated-event {
+    position: absolute;
+    width: 615px;
+    height: 77px;
+    top: 14px;
+    left: 10px;
+  }
+  
+  .div-seated-event-row .dec-dec {
+    position: absolute;
+    width: 172px;
+    height: 20px;
+    top: 1px;
+    left: 0;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 13.1px;
+    letter-spacing: 0;
+    line-height: 25.6px;
+    white-space: nowrap;
+  }
+  
+  .div-seated-event-row .text-wrapper {
+    position: absolute;
+    width: 163px;
+    height: 16px;
+    top: 29px;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 25.6px;
+    white-space: nowrap;
+  }
+  
+  .div-seated-event-row .div {
+    position: absolute;
+    width: 150px;
+    height: 16px;
+    top: 29px;
+    left: 369px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14.1px;
+    letter-spacing: 0;
+    line-height: 25.6px;
+    white-space: nowrap;
+  }
+  
+  .div-seated-event-row .wilco-s-sky-blue-sky {
+    position: absolute;
+    width: 190px;
+    height: 16px;
+    top: 54px;
+    left: 0;
+    opacity: 0.7;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 25.6px;
+    white-space: nowrap;
+  }
+  
+  .div-seated-event-row .link-wrapper {
+    position: absolute;
+    width: 129px;
+    height: 77px;
+    top: 14px;
+    left: 828px;
+  }
+  
+  .div-seated-event-row .link {
+    position: relative;
+    width: 120px;
+    height: 35px;
+    top: 21px;
+    left: 9px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 2px solid;
+    border-color: #000000;
+  }
+  
+  .div-seated-event-row .tickets {
+    position: absolute;
+    width: 41px;
+    height: 15px;
+    top: 8px;
+    left: 34px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 9.6px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 19.2px;
+    white-space: nowrap;
+  }
+
+
+  .div-seated-event-row .overlap-group {
+    position: absolute;
+    width: 1440px;
+    height: 521px;
+    top: 1479px;
+    left: -634px;
+  }
+  
+  .div-seated-event-row .section {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: center;
+    padding: 64px 0px;
+    position: absolute;
+    top: 172px;
+    left: 0;
+  }
+  
+  .div-seated-event-row .container {
+    position: relative;
+    width: 1200px;
+    flex: 0 0 auto;
+    background-color: #f8f8f8;
+  }
+  
+  .div-seated-event-row .new-page {
+    position: absolute;
+    width: 1440px;
+    height: 521px;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+  }
+  
+
+  .div-seated-event-row.mobile-style {
+    width: auto; /* Faça o contêiner ocupar a largura total */
+    border-bottom: none; /* Remova a borda inferior no modo móvel */
+  }
+  
+  .div-seated-event-row.mobile-style .div-seated-event {
+    position: static; /* Remova a posição absoluta */
+    width: auto; /* Faça a largura se ajustar automaticamente */
+    margin-left: 10px; /* Adicione uma margem à esquerda */
+  }
+  
+  .div-seated-event-row.mobile-style .link-wrapper {
+    position: static; /* Remova a posição absoluta */
+    width: auto; /* Faça a largura se ajustar automaticamente */
+    margin-top: 10px; /* Adicione uma margem superior */
+  }
+  
+  @media (max-width: 768px) {
+    .div-seated-event-row {
+      width: 45%;
+      border-bottom: none;
+      margin: auto;
+    }
+  
+    .div-seated-event-row .div-seated-event {
+      position: static;
+      width: 60%; /* Altere a largura para ocupar a largura total do contêiner pai */
+      margin:  auto; /* Centralize o conteúdo dentro do contêiner */
+      text-align: center; /* Centralize o texto dentro do contêiner */
+    }
+  
+    .div-seated-event-row .link-wrapper {
+      position: static;
+      width: 86%;
+      margin-top: 10px;
+      margin:  auto;
+      text-align: center;
+    }
+    .div-seated-event-row .wilco-s-sky-blue-sky {
+        left: -15px !important;
+
+    }
+  }
+  
+  
+  
